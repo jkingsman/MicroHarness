@@ -25,4 +25,5 @@ var tests = {
 ```
 
 Run the tests by calling `runTests(tests);` (or whatever you have named your object of tests). Results will be output to your console. See `example.html` for a full example.
+
 ![Example output from microharness](http://i.imgur.com/nQeDSk8.png)
