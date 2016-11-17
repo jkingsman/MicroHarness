@@ -1,6 +1,6 @@
 # μHarness
 
-μHarness (or MicroHarness) is a JS helper function for no-frills testing. Weighing in at < 0.KiB minified, it's simple to get up and running.
+μHarness (or MicroHarness) is a JS helper function for no-frills testing. Weighing in at under 600 bytes minified, it's simple to get up and running.
 
 ## Installation
 
