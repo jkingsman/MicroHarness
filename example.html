@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example microHarness Page</title>
+</head>
+
+<body>
+    <p>Check your console</p>
+</body>
+
+<!-- Include the base testing harness -->
+<script src="harness.js"></script>
+
+<!-- Add tests and run them -->
+<script language="JavaScript">
+var tests = {
+    // test titles will have underscores conveted to spaces
+    world_isnt_on_fire: function() {
+        var actual = true;
+        var expected = true;
+
+        // return an array with the zeroth element as the expected output and the first as the returned/testing output
+        return [expected, actual];
+    },
+
+    this_test_will_fail: function() {
+        return [1 === 1, false];
+    },
+};
+
+// run the tests by calling the run function with your test object
+runTests(tests);
+</script>
+</html>
