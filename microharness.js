@@ -6,12 +6,12 @@ function runTests(tests) {
     };
 
     var divider = new Array(40).join('-');
-    
+
     function log(text, style){
       console.log(text, style);
     }
 
-    log('Beginning ' + Object.keys(tests).length + ' tests');
+    log('Beginning ' + Object.keys(tests).length + ' tests', null);
 
     // start with a clean slate
     var passcount = 0;
@@ -29,13 +29,13 @@ function runTests(tests) {
         } else {
             // test failure
             log(prettyName + ' %cFAIL', colors.f);
-            log('↳ got ' + results[0] + ' and expected ' + results[1]);
+            log('↳ got ' + results[0] + ' and expected ' + results[1], null);
             failcount++;
         }
     }
 
-    log(divider);
-    log(divider);
+    log(divider, null);
+    log(divider, null);
 
     // summarize
     if (failcount === 0) {
